@@ -4,7 +4,7 @@ layout: base
 
 <div class="gallery">
     {% for static_file in site.static_files %}
-        {% if static_file.path contains page.dir and (static_file.extname == '.jpg') %}
+        {% if static_file.path contains page.dir and (static_file.extname == '.webp') %}
             {% assign filename = static_file.path | split: "/" | last %}
             <img src="{{ filename }}" alt="Image">
         {% endif %}
