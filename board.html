@@ -16,6 +16,7 @@ layout: base
       line-height: 1.2em;
     }
         
+<<<<<<< HEAD
     /* Base styles for smaller screens */
     @media (max-width: 999px) {
       .sidebar {
@@ -43,6 +44,21 @@ layout: base
           max-width: calc(100% - 150px);
         }
     }
+=======
+    .sidebar {
+      position: fixed;
+      flex: 0 0 12em; /* Fixed width for the sidebar */
+      width: 200px;
+    }
+
+    .page-content {
+      flex-grow: 1; /* Consumes the rest of the space */
+      margin-left: 200px;
+      margin-right: 200px;          
+      max-width: calc(100% - 150px);
+    }
+    
+>>>>>>> b9914c525930911761f6acf434137a66fa6bb98c
   </style>
 </head>
 
@@ -66,7 +82,7 @@ layout: base
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    fetch('/Boards/outline.html')
+    fetch('/Snippets/outline.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('outline').innerHTML = data;
