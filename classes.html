@@ -5,7 +5,7 @@ layout: board
 <main class="post-content">
   {{ content }}
 
-  <h2>文章：</h2>
+  <h2>Articles：</h2>
   <ul>
   {% assign filtered_pages = site.pages | where:"categories", page.category %}
   {% assign sorted_pages = filtered_pages | sort: 'date' | reverse %}
