@@ -5,6 +5,10 @@ layout: board
 <main class="post-content">
   {{ content }}
 
+  <!-- Add the category description from the data file -->
+  {% assign category_description = site.data.assets[page.category] %}
+  <p>{{ category_description.describe }}</p> <!-- Updated to display only the 'describe' value -->
+
   <h2>Articles：</h2>
   <ul>
   {% assign filtered_pages = site.pages | where:"categories", page.category %}
