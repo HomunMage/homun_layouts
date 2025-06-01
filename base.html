@@ -26,7 +26,7 @@
               </span>
             </label>
     
-            <inject-root-html src="trigger.html"></inject-root-html>
+            <div inject-root="trigger"></div>
           </nav>
       </div>
 
@@ -51,8 +51,7 @@
     {%- include footer.html -%}
 
     <footer>      
-      <div class="social-media-list">
-        <inject-root-html src="social-media-list.html"></inject-root-html>
+      <div class="social-media-list" inject-root="social-media-list">
       </div>
     </footer>
 
