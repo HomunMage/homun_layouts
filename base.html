@@ -26,7 +26,7 @@
               </span>
             </label>
     
-            <div class="trigger"></div>
+            <inject-root-html src="trigger.html"></inject-root-html>
           </nav>
       </div>
 
@@ -50,38 +50,15 @@
 
     {%- include footer.html -%}
 
-    <div>
-      <ul class="social-media-list">
-          <a class="encode-email" data-email="Homun@posetmage.com" href="mailto">
-              <i class="fas fa-envelope"></i>
-          </a>
-          <a href="https://youtube.com/@HomunMage">
-              <i class="fab fa-youtube"></i>
-          </a>
-          <a href="https://www.reddit.com/user/HomunMage/">
-              <i class="fab fa-reddit"></i>
-          </a>
-          <a href="https://facebook.com/HomunMage">
-              <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://twitter.com/HomunMage">
-              <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://line.me/ti/p/Out6J_7uOq">
-              <i class="fab fa-line"></i>
-          </a>
-          <a href="https://t.me/posetmage">
-              <i class="fab fa-telegram"></i>
-          </a>
-          <a href="https://twitch.tv/posetmage">
-              <i class="fab fa-twitch"></i>
-          </a>
-      </ul>
-    </div>
+    <footer>      
+      <div class="social-media-list">
+        <inject-root-html src="social-media-list.html"></inject-root-html>
+      </div>
+    </footer>
 
     <script src="https://posetmage.com/cdn/js/EmailEncoder.js"></script>
     <script src="https://posetmage.com/cdn/js/SearchSite.js"></script>
-    <script src="https://posetmage.com/cdn/js/PageTrigger.js"></script>
+    <script src="https://posetmage.com/cdn/js/InjectRootHtml.js"></script>
 
   </body>
 
